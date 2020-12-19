@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IOT</string>
+    <string name="timer">Giờ tắt</string>
+    <string name="open">Giờ Mở</string>
+    <string name="off">Giờ tắt</string>
+    <string name="status">Trạng Thái</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="menu_item_about">About App</string>
+    <string name="about_app_version">Phiên bản: %s</string>
+
+
+    <string name="esptouch_message_permission">Yêu cầu vị trí để nhận thông tin Wifi. \nChạm để yêu cầu cấp quyền</string>
+    <string name="esptouch_message_location">Vui lòng bật GPS để nhận thông tin Wifi.</string>
+    <string name="esptouch_message_wifi_connection">Vui lòng đăng nhập vào Wifi trước.</string>
+    <string name="esptouch_message_wifi_frequency">Current Wi-Fi connection is 5G, but the device just support 2.4G.</string>
+
+    <string name="esptouch1_title">iHome</string>
+    <string name="esptouch1_about_version">EspTouch Version: %s</string>
+    <string name="esptouch1_ssid_title">Tên Wifi: </string>
+    <string name="esptouch1_bssid_title">BSSID: </string>
+    <string name="esptouch1_password_title">Mật khẩu: </string>
+    <string name="esptouch1_device_count_title">Số thiết bị: </string>
+    <string name="esptouch1_package_broadcast">Broadcast</string>
+    <string name="esptouch1_package_multicast">Multicast</string>
+    <string name="esptouch1_confirm">Xác nhận</string>
+    <string name="esptouch1_wifi_5g_message">Device don\'t support 5G Wi-Fi, please make sure the currently connected Wi-Fi is 2.4G, or you can try multicast</string>
+    <string name="esptouch1_location_permission_title">⚠️Warning</string>
+    <string name="esptouch1_location_permission_message">On Android M or higher version, App can\'t get Wi-Fi connection information if you forbid Location permission.</string>
+    <string name="esptouch1_configuring_message">Đang định cấu hình thiết bị, vui lòng đợi trong giây lát…</string>
+    <string name="esptouch1_configure_wifi_change_message">Wi-Fi disconnected or changed</string>
+    <string name="esptouch1_configure_result_failed">Thất bại</string>
+    <string name="esptouch1_configure_result_failed_port">Tạo tác vụ không thành công, cổng EspTouch có thể được sử dụng bởi luồng khác</string>
+    <string name="esptouch1_configure_result_success">EspTouch hoàn thành</string>
+    <string name="esptouch1_configure_result_success_item">BSSID = %1$s, InetAddress = %2$s</string>
+
+    <string name="esptouch2_title">EspTouch V2</string>
+    <string name="esptouch2_about_version">EspTouch V2 Version: %s</string>
+    <string name="esptouch2_ssid_label">SSID: </string>
+    <string name="esptouch2_bssid_label">BSSID: </string>
+    <string name="esptouch2_ip_label">IP: </string>
+    <string name="esptouch2_password_label">Password</string>
+    <string name="esptouch2_aes_key">AES Key</string>
+    <string name="esptouch2_aes_key_error">AES Key must be null or 16 bytes data</string>
+    <string name="esptouch2_custom_data">Custom Data</string>
+    <string name="esptouch2_custom_data_error">Custom data can\'t be more than 127 bytes</string>
+
+    <string name="esptouch2_provision_title">Provision</string>
+    <string name="esptouch2_provision_stop">Stop</string>
+    <string name="esptouch2_provision_result_exception">Catch exception: %s</string>
+    <string name="esptouch2_provision_result_none">Not found any devices</string>
+    <string name="quenpass"><u>Quên Mật Khẩu</u></string>
+</resources>

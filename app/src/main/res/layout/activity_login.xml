@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/custom_background_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     <ImageView
+         android:layout_marginTop="35dp"
+         android:layout_gravity="center"
+         android:src="@drawable/robot"
+         android:layout_width="64dp"
+         android:layout_height="64dp"/>
+    <TextView
+        android:padding="6dp"
+        android:layout_marginTop="15dp"
+        android:textSize="24sp"
+        android:shadowColor="@android:color/background_light"
+        android:shadowRadius="1"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:textColor="@android:color/background_light"
+        android:gravity="center"
+        android:text="Đăng Nhập Tài Khoản"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        android:layout_width="match_parent"
+        android:hint="Email"
+        android:padding="10dp"
+        android:textColorHint="@android:color/background_light"
+        android:layout_height="wrap_content">
+        <EditText
+
+            android:id="@+id/edittendangnhap"
+            android:shadowColor="@android:color/background_light"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:hint="Mật Khẩu"
+        android:padding="10dp"
+        android:textColorHint="@android:color/background_light"
+        android:layout_height="wrap_content">
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/editmatkhau"
+            android:shadowColor="@android:color/background_light"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginRight="30dp"
+            android:id="@+id/btndangnhap"
+            android:padding="5dp"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            android:text="Đăng Nhập"
+            android:background="@drawable/custom_back_ground_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+           android:layout_marginLeft="50dp"
+            android:id="@+id/btndangky"
+            android:padding="5dp"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            android:text="Đăng Ký"
+            android:background="@drawable/custom_back_ground_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:text="@string/quenpass"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:shadowColor="@android:color/holo_red_dark"
+        android:id="@+id/txtquenmatkhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
