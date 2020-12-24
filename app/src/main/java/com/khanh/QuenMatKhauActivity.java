@@ -49,9 +49,9 @@ public class QuenMatKhauActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()){
-                                Toast.makeText(QuenMatKhauActivity.this, "Vao email kiem tra", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(QuenMatKhauActivity.this, "Vui lòng kiểm tra Email", Toast.LENGTH_SHORT).show();
                             }else{
-                                Toast.makeText(QuenMatKhauActivity.this, "Email khong ton tai", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(QuenMatKhauActivity.this, "Email không tồn tại, vui lòng kiểm tra lại", Toast.LENGTH_SHORT).show();
                             }
                         }
                     });

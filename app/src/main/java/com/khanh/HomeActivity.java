@@ -304,7 +304,7 @@ implements  NavigationView.OnNavigationItemSelectedListener{
                     if(checked){
                         UpdateTopic(HourOn,MinuteOn,HourOff,MinuteOff);
                     }else{
-                        Toast.makeText(HomeActivity.this, "Ket Noi Internet", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(HomeActivity.this, "Kết Nối Internet", Toast.LENGTH_SHORT).show();
                     }
                     
                     
@@ -319,7 +319,7 @@ implements  NavigationView.OnNavigationItemSelectedListener{
 
                         UpdateTopicOn("1");
                     }else{
-                        Toast.makeText(HomeActivity.this, "Hay Ket noi Internet", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(HomeActivity.this, "Hãy kết nối Internet", Toast.LENGTH_SHORT).show();
                     }
                     
                 }
@@ -331,7 +331,7 @@ implements  NavigationView.OnNavigationItemSelectedListener{
                     if(checked){
                         UpdateTopicOn("0");
                     }else{
-                        Toast.makeText(HomeActivity.this, "Hay ket noi Internet", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(HomeActivity.this, "Hãy kết nối Internet", Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -389,7 +389,7 @@ implements  NavigationView.OnNavigationItemSelectedListener{
                     if(check==1){
                         Push(gioOn,phutOn,gioOff,phutOff);
                     }else{
-                        Toast.makeText(HomeActivity.this, "On<Off", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(HomeActivity.this, "Thời gian không hợp lệ", Toast.LENGTH_SHORT).show();
                     }
                 }
 
@@ -480,9 +480,9 @@ implements  NavigationView.OnNavigationItemSelectedListener{
                         @Override
                         public void messageArrived(String topic, MqttMessage message) throws Exception {
                           if(message.toString().equalsIgnoreCase("1")){
-                              txttrangthai.setImageResource(R.drawable.lightbulbon);
+                              txttrangthai.setImageResource(R.drawable.pumpon);
                           }else{
-                              txttrangthai.setImageResource(R.drawable.lightbulb);
+                              txttrangthai.setImageResource(R.drawable.pumpoff);
                           }
                         }
 
@@ -659,15 +659,15 @@ implements  NavigationView.OnNavigationItemSelectedListener{
 
     private void DiaLog() {
         AlertDialog.Builder builder=new AlertDialog.Builder(this);
-        builder.setTitle("Thong Bao");
-        builder.setMessage("Ban muon dang xuat ");
-        builder.setNegativeButton("Khong", new DialogInterface.OnClickListener() {
+        builder.setTitle("Thông báo");
+        builder.setMessage("Bạn muốn đăng xuất ?");
+        builder.setNegativeButton("Không", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
 
             }
         });
-        builder.setPositiveButton("Co", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Có", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 FirebaseAuth.getInstance().signOut();

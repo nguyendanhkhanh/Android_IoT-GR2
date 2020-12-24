@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
                             if(task.isSuccessful()){
                                 startActivity(new Intent(LoginActivity.this,HomeActivity.class));
                             }else{
-                                Toast.makeText(LoginActivity.this, "Failed", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginActivity.this, "Tên đăng nhập hoặc mật khẩu không đúng", Toast.LENGTH_SHORT).show();
                             }
                         }
                     });

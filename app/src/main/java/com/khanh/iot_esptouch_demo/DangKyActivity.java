@@ -65,15 +65,15 @@ public class DangKyActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()) {
-                                Toast.makeText(DangKyActivity.this, "Sucess", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(DangKyActivity.this, "Đăng ký thành công!", Toast.LENGTH_SHORT).show();
                             }else{
-                                Toast.makeText(DangKyActivity.this, "Failed", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(DangKyActivity.this, "Email không hợp lệ hoặc đã tồn tại", Toast.LENGTH_SHORT).show();
                             }
                     }
                 });
 
             }else{
-                Toast.makeText(this, "Không Để Trống", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Kiểm tra lại Email hoặc Mật khẩu", Toast.LENGTH_SHORT).show();
             }
             
         }catch (Exception e){
